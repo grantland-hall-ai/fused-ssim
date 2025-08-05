@@ -76,7 +76,10 @@ setup(
     ],
     cmdclass={
         'build_ext': CustomBuildExtension
-    }
+    },
+    install_requires=[
+        "torch",
+    ],
 )
 
 # Print again at the end of setup.py execution
